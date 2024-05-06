@@ -1,4 +1,4 @@
-// directories.rs or directories/mod.rs
+
 
 use std::fs;
 use std::path::Path;
@@ -15,7 +15,7 @@ pub fn list_files_in_directory(dir_path: &str) -> io::Result<Vec<String>> {
     Ok(files)
 }
 
-// Function to check if a directory exists
+//  Check if the directory exists.
 pub fn directory_exists(dir_path: &str) -> bool {
     Path::new(dir_path).is_dir()
 }
